@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supplementary Material | Poster Title</title>
+    <style>
+        /* Modern, academic-friendly styling */
+        :root {
+            --primary-color: #0f2c59; /* Deep blue for academic feel */
+            --secondary-color: #3f72af;
+            --text-color: #333333;
+            --bg-color: #f9f9f9;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2.5rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .authors {
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .abstract-section {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border-left: 5px solid var(--secondary-color);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .abstract-section h2 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr; /* Stacked layout is usually better for large scientific figures, change to 1fr 1fr if figures are small */
+            }
+        }
+
+        .figure-card {
+            background: var(--card-bg);
+            border: 1px solid #e1e8ed;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+
+        .figure-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .image-container {
+            background: #fff;
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 1px solid #e1e8ed;
+            position: relative;
+        }
+
+        .figure-card img {
+            max-width: 100%;
+            height: auto;
+            max-height: 500px;
+            object-fit: contain;
+        }
+
+        .zoom-hint {
+            font-size: 0.8rem;
+            color: #777;
+            margin-top: 0.5rem;
+            display: block;
+        }
+
+        .caption {
+            padding: 1.5rem;
+            background-color: #fafbfc;
+        }
+
+        .caption h3 {
+            margin: 0 0 0.75rem 0;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+        }
+
+        .caption p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: #4a5568;
+            text-align: justify;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1rem;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+            color: #666;
+            border-top: 1px solid #e1e8ed;
+        }
+
+        footer a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Poster Title: Novel Insights into Your Research Topic</h1>
+        <p class="authors">Jacob Hurrell Payne<sup>1</sup>, Casey T DeRoo<sup>1</sup></p>
+        <p><sup>1</sup>Department of Physics and Astronomy, University of Iowa</p>
+        <p style="margin-top: 1rem; font-size: 0.9rem; font-weight: bold;">Presented at: SPIE AT+I 2026</p>
+    </header>
+
+    <div class="container">
+        
+        <section class="abstract-section">
+            <h2>Poster Summary & Context</h2>
+            <p>
+                Welcome to our supplementary materials page. This webpage contains high-resolution figures, 
+                extended datasets, and detailed captions that complement our poster presentation. If you have any 
+                questions, please feel free to reach out via the contact information at the bottom of this page.
+            </p>
+        </section>
+
+        <main class="grid">
+
+            <section class="figure-card" id="fig1">
+                <div class="image-container">
+                    <a href="figs/figure1.png" target="_blank">
+                        <img src="figs/figure1.png" alt="Description of Figure 1">
+                    </a>
+                    <span class="zoom-hint">💡 Click image to open high-resolution version in a new tab</span>
+                </div>
+                <div class="caption">
+                    <h3>Figure S1: Extended Methodology and Workflow Pipeline</h3>
+                    <p>
+                        <strong>Figure Legend:</strong> Detailed schematic of the experimental setup and data processing pipeline. 
+                        (A) Initial data collection phase using sample group X. (B) Normalization techniques applied to eliminate background noise. 
+                        (C) Final comparative analysis metric. Shaded regions denote the 95% confidence intervals across three independent trials.
+                    </p>
+                </div>
+            </section>
+
+            <section class="figure-card" id="fig2">
+                <div class="image-container">
+                    <a href="figs/figure2.png" target="_blank">
+                        <img src="figs/figure2.png" alt="Description of Figure 2">
+                    </a>
+                    <span class="zoom-hint">💡 Click image to open high-resolution version in a new tab</span>
+                </div>
+                <div class="caption">
+                    <h3>Figure S2: Complete Sensitivity and Specificity Analysis</h3>
+                    <p>
+                        <strong>Figure Legend:</strong> ROC curves evaluating model performance across diverse validation sets. 
+                        Our approach (blue line) consistently outperforms the baseline models (dashed red line) across all thresholds. 
+                        Data points represent mean values derived from n=150 samples per cohort.
+                    </p>
+                </div>
+            </section>
+
+            <section class="figure-card" id="fig3">
+                <div class="image-container">
+                    <a href="figs/figure3.png" target="_blank">
+                        <img src="figs/figure3.png" alt="Description of Figure 3">
+                    </a>
+                    <span class="zoom-hint">💡 Click image to open high-resolution version in a new tab</span>
+                </div>
+                <div class="caption">
+                    <h3>Figure S3: Supplementary Scatter Plots</h3>
+                    <p>
+                        <strong>Figure Legend:</strong> Correlation matrices between Variable A and Variable B. 
+                        No significant confounding effects were observed when controlling for demographic factors (p > 0.05).
+                    </p>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <footer>
+        <p>© 2026 Jacob H. Payne. GNU General Public Licensce v3.0.</p>
+        <p>
+            Contact: <a href="mailto:jacob-payne@uiowa.edu">jacob-payne@uiowa.edu</a> | 
+            Download Full Poster: <a href="poster.pdf" target="_blank">PDF Link</a>
+        </p>
+    </footer>
+
+</body>
+</html>
